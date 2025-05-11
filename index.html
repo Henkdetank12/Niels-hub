@@ -8,10 +8,58 @@
 </head>
 <body>
     <header>
-        <h1>Niels Hub</h1>
-        <p>Interactief Mood Board | HR Vaardigheden OP4</p>
-
+        <div class="header-content">
+            <button class="header-button" onclick="openPopup('doelen')">Doelen</button>
+            <div class="title-container">
+                <h1>Niels Hub</h1>
+                <p>Interactief Mood Board | HR Vaardigheden OP4</p>
+            </div>
+            <button class="header-button" onclick="openPopup('kernwaarden')">Kernwaarden</button>
+        </div>
     </header>
+
+    <!-- Popup Frames -->
+    <div id="doelen-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('doelen')">&times;</span>
+            <h2>Doelen</h2>
+            <div class="popup-grid">
+                <div class="popup-item">
+                    <h3>Professionele Groei</h3>
+                    <p>Het ontwikkelen van leiderschapsvaardigheden en het opbouwen van een sterke professionele reputatie.</p>
+                </div>
+                <div class="popup-item">
+                    <h3>Impact Maken</h3>
+                    <p>Bijdragen aan positieve veranderingen binnen organisaties en de maatschappij.</p>
+                </div>
+                <div class="popup-item">
+                    <h3>Innovatie</h3>
+                    <p>Het implementeren van innovatieve oplossingen voor complexe bedrijfsuitdagingen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kernwaarden-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('kernwaarden')">&times;</span>
+            <h2>Kernwaarden</h2>
+            <div class="popup-grid">
+                <div class="popup-item">
+                    <h3>Integriteit</h3>
+                    <p>Eerlijkheid en transparantie in alle professionele interacties.</p>
+                </div>
+                <div class="popup-item">
+                    <h3>Innovatie</h3>
+                    <p>Creatief denken en het omarmen van nieuwe ideeën.</p>
+                </div>
+                <div class="popup-item">
+                    <h3>Samenwerking</h3>
+                    <p>Effectief samenwerken om gezamenlijke doelen te bereiken.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main class="mood-board">
         <!-- Row 1 -->
