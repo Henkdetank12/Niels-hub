@@ -9,12 +9,15 @@
 <body>
     <header>
         <div class="header-content">
-            <button class="header-button" onclick="openPopup('doelen')">Doelen</button>
+            <div class="header-buttons">
+                <button class="header-button" onclick="openPopup('doelen')">Missie</button>
+                <button class="header-button" onclick="openPopup('leerdoelen')">Leerdoelen</button>
+                <button class="header-button" onclick="openPopup('kernwaarden')">Kernwaarden</button>
+            </div>
             <div class="title-container">
                 <h1>Niels Hub</h1>
                 <p>Interactief Mood Board | HR Vaardigheden OP4</p>
             </div>
-            <button class="header-button" onclick="openPopup('kernwaarden')">Kernwaarden</button>
         </div>
     </header>
 
@@ -22,20 +25,35 @@
     <div id="doelen-popup" class="popup">
         <div class="popup-content">
             <span class="close-button" onclick="closePopup('doelen')">&times;</span>
-            <h2>Doelen</h2>
+            <h2>Missie</h2>
             <div class="popup-grid">
                 <div class="popup-item">
-                    <h3>Professionele Groei</h3>
-                    <p>Het ontwikkelen van leiderschapsvaardigheden en het opbouwen van een sterke professionele reputatie.</p>
+                    <h3>Persoonlijke missie:</h3>
+                    <p><br>- Ik leef een leven geleid door nieuwsgierigheid en verbind mensen door creativiteit en vernieuwende inzichten. Ik ben mijn hele leven bezig met het leren van nieuwe dingen, waarbij ik doelbewust relaties opbouw en tot mijn volle potentie bijdraag aan een positieve, verbonden wereld.</p>
                 </div>
                 <div class="popup-item">
-                    <h3>Impact Maken</h3>
-                    <p>Bijdragen aan positieve veranderingen binnen organisaties en de maatschappij.</p>
+                    <h3>Professionele visie:</h3>
+                    <p><br>- Ik zet mijn kennis in HRM, finance en strategisch denken in om organisaties en groepen mensen te inspireren en te helpen met vernieuwen. Ik verbind mensen, stimuleer samenwerking en leid met creativiteit, veiligheid en integriteit. Zo kan ik een positieve impact maken in mijn vakgebied en de wereld om mij heen.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="leerdoelen-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('leerdoelen')">&times;</span>
+            <h2>Leerdoelen</h2>
+            <div class="popup-grid">
+                <div class="popup-item">
+                    <h3>Leerdoel 1</h3>
+                    <p>...</p>
                 </div>
                 <div class="popup-item">
-                    <h3>Innovatie</h3>
-                    <p>Het implementeren van innovatieve oplossingen voor complexe bedrijfsuitdagingen.</p>
+                    <h3>Leerdoel 2</h3>
+                    <p>...</p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -46,15 +64,15 @@
             <h2>Kernwaarden</h2>
             <div class="popup-grid">
                 <div class="popup-item">
-                    <h3>Integriteit</h3>
+                    <h3>Nieuwheid</h3>
                     <p>Eerlijkheid en transparantie in alle professionele interacties.</p>
                 </div>
                 <div class="popup-item">
-                    <h3>Innovatie</h3>
+                    <h3>Verbondenheid</h3>
                     <p>Creatief denken en het omarmen van nieuwe ideeën.</p>
                 </div>
                 <div class="popup-item">
-                    <h3>Samenwerking</h3>
+                    <h3>Creativiteit</h3>
                     <p>Effectief samenwerken om gezamenlijke doelen te bereiken.</p>
                 </div>
             </div>

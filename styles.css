@@ -22,10 +22,16 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     max-width: 1600px;
     margin: 0 auto;
+    gap: 2rem;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem;
 }
 
 .title-container {
@@ -43,6 +49,7 @@ header {
     font-size: 1.1rem;
     transition: all 0.3s ease;
     min-width: 120px;
+    white-space: nowrap;
 }
 
 .header-button:hover {
@@ -223,9 +230,15 @@ footer {
         gap: 1rem;
     }
 
-    .header-button {
+    .header-buttons {
         width: 100%;
-        max-width: 200px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header-button {
+        width: auto;
+        min-width: 120px;
     }
 
     .mood-board {
