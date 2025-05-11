@@ -65,8 +65,8 @@ header h1 {
 
 .mood-board {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 2rem;
     padding: 2rem;
     max-width: 1600px;
@@ -216,11 +216,10 @@ footer {
 
 @media (max-width: 1200px) {
     .mood-board {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
         gap: 1.5rem;
         padding: 1.5rem;
-        margin-left: 6rem;
     }
 }
 
@@ -243,6 +242,7 @@ footer {
 
     .mood-board {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
         gap: 1rem;
     }
 
@@ -259,6 +259,6 @@ footer {
 @media (max-width: 480px) {
     .mood-board {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, auto);
+        grid-template-rows: repeat(6, auto);
     }
 } 
